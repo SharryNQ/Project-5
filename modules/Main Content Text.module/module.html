@@ -1,0 +1,29 @@
+{# Module style tab reference #}
+
+<style>
+  {% scope_css %}
+				.leftArea {
+								color: {{module.style.left_text_color.color}} !important;
+				}
+  {% end_scope_css %}
+</style>
+
+<section class="sideBySideControllerNormal">
+		
+		<div class="leftArea">
+				<p><span class='subTextDef'>{{module.left_side.subtitle}}</span></p>
+				<h2>
+						{{module.left_side.title}}
+				</h2>
+				
+				{{module.left_side.richtext_field}}
+		</div>
+		
+		<div class="rightArea">
+				<h2>
+						{{module.right_side.title}}
+				</h2>
+				
+				{{module.right_side.richtext_field_1}}
+		</div>
+</section>

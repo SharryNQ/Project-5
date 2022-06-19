@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "adn",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 65619211924,
+  "label" : "Landing Page Form",
+  "is_available_for_new_content" : true
+}

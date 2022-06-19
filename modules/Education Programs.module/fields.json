@@ -1,0 +1,140 @@
+[ {
+  "id" : "cf8cd226-4f12-8421-9c91-bc498d1299a8",
+  "name" : "left_group",
+  "display_width" : null,
+  "label" : "Left Side",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4c80864f-b68e-61e5-d034-bc71e89e5986",
+    "name" : "subtitle",
+    "display_width" : null,
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Discover our programs",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Discover our programs"
+  }, {
+    "id" : "cae23859-3953-b200-e3c4-702d68de79f9",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "EDUCATION PROGRAMS"
+  }, {
+    "id" : "6ddc44a3-5748-6fa0-9d2f-23a7904d1131",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor turpis eget tincidunt sit semper tortor amet. Elementum molestie a in condimentum lacus. Aliquet duis vel egestas eget quis. Lorem ut orci, tincidunt vel a tellus. At urna aenean at non iaculis nisl.</p>\n<p>Felis placerat gravida sed nibh id purus. Dictum tristique sagittis lobortis sed. Fames fermentum viverra aliquet volutpat. Cursus turpis cursus vitae ut enim habitasse nec cursus amet. Egestas a arcu morbi amet nulla arcu est. Massa enim sed consectetur ornare. Amet, nibh sollicitudin tempor tincidunt velit</p>"
+  }, {
+    "id" : "39665717-5aa8-74f9-4db4-eda4988cd81d",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn More"
+  }, {
+    "id" : "6c2257cc-17c1-f11c-8369-d6d16af3394e",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "subtitle" : "Discover our programs",
+    "title" : "EDUCATION PROGRAMS",
+    "richtext_field" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor turpis eget tincidunt sit semper tortor amet. Elementum molestie a in condimentum lacus. Aliquet duis vel egestas eget quis. Lorem ut orci, tincidunt vel a tellus. At urna aenean at non iaculis nisl.</p>\n<p>Felis placerat gravida sed nibh id purus. Dictum tristique sagittis lobortis sed. Fames fermentum viverra aliquet volutpat. Cursus turpis cursus vitae ut enim habitasse nec cursus amet. Egestas a arcu morbi amet nulla arcu est. Massa enim sed consectetur ornare. Amet, nibh sollicitudin tempor tincidunt velit</p>",
+    "button_text" : "Learn More",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "2cd3f375-f166-1e1b-7f2e-a0d7945c9933",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "cd57587b-66d4-b0b1-5ee6-efa0bf94ab57",
+    "name" : "border_radius",
+    "display_width" : null,
+    "label" : "Border Radius",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 20
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "border_radius" : 20
+  }
+}, {
+  "id" : "d65a6220-72ee-e432-6e19-5bd99250e21e",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://www.remotish.agency/hubfs/Optimized%20Image.webp",
+    "alt" : "Optimized Image",
+    "loading" : "lazy",
+    "width" : 854,
+    "height" : 704,
+    "max_width" : 854,
+    "max_height" : 704
+  }
+} ]

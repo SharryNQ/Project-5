@@ -1,0 +1,113 @@
+[ {
+  "id" : "1e75bc5f-3db0-4917-bb24-5efca0bc9103",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p class=\"subTextDef\">If you have a question please check out our contact channels</p>\n<h2>Frequently Asked Questions</h2>"
+}, {
+  "id" : "f173a9b9-e245-39a8-6a2e-b85abfab3da8",
+  "name" : "accordion_group",
+  "display_width" : null,
+  "label" : "Accordion Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 100,
+    "sorting_label_field" : "3a9918ce-340f-c96e-b283-a80816147a2a",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "3a9918ce-340f-c96e-b283-a80816147a2a",
+    "name" : "quetion",
+    "display_width" : null,
+    "label" : "Question",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Question #1?"
+  }, {
+    "id" : "7289cf41-5f85-b3d7-0e84-42003b94d167",
+    "name" : "answer",
+    "display_width" : null,
+    "label" : "Answer",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>A thoughtful, informative response.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "quetion" : "Question #1?",
+    "answer" : "<p>A thoughtful, informative response.</p>"
+  }, {
+    "quetion" : "Question #1?",
+    "answer" : "<p>A thoughtful, informative response.</p>"
+  }, {
+    "quetion" : "Question #1?",
+    "answer" : "<p>A thoughtful, informative response.</p>"
+  } ]
+}, {
+  "id" : "6674e3fb-fc94-6a81-5803-1e41aae19c8d",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4d69b4e7-767a-b0ed-7f12-180a10246c7b",
+    "name" : "border_radius",
+    "display_width" : null,
+    "label" : "Border Radius",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number"
+  }, {
+    "id" : "dec11d57-6472-0ca7-f114-2676529bba57",
+    "name" : "active_and_hover_color",
+    "display_width" : null,
+    "label" : "Active and Hover Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "d124dd36-728d-18ed-a0d7-8e02f7651e9a",
+    "name" : "accordion_row_width",
+    "display_width" : null,
+    "label" : "Accordion Row Width",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 200,
+    "max" : 1100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 850
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "active_and_hover_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "accordion_row_width" : 850
+  }
+} ]

@@ -1,0 +1,147 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Contact Us 
+  screenshotPath: ../images/thumbnails/Contact.jpg
+-->
+ 
+{% extends './layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--about', label='Main section' %}
+     
+   {# about us First section #}
+    {% dnd_section 
+     margin={
+        'top': -100,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+						padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+						full_width='true'
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Main Hero',
+            flexbox_positioning="TOP_CENTER",
+            title = "We´d Love to Hear FromYou!",
+            paragraph = "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper augue viverra molestie vitae. Vulputate egestas molestie netus habitant placerat. Ut sagittis adipiscing enim faucibus augue eu. ",
+            button_text = "Get in touch",
+            section_background = {
+              src : "{{ get_asset_url('../images/thumbnails/BackgroundImage_new.jpg') }}"
+            
+            }
+         
+          %}
+  
+  
+  
+          {% end_dnd_module %}
+   
+      
+   
+         
+  
+    {% end_dnd_section %}
+   {# end about us First section #}
+
+     {# start sendond  section #} 
+  
+		
+  
+  
+  {% dnd_section 
+     padding={
+        'top': 80,
+        'bottom': 70,
+        'left': 0,
+        'right': 0
+      },
+						margin={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+						background_color="#ffffff";
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Contact Form And Image',
+            flexbox_positioning="TOP_CENTER",
+    
+          %}
+  
+  
+          {% end_dnd_module %}
+  
+   {% end_dnd_section %} 
+  
+
+  
+  
+  {% dnd_section 
+     margin={
+        'top': 50,
+        'bottom': 70,
+        'left': 0,
+        'right': 0
+      },
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Contact Us',
+            flexbox_positioning="TOP_CENTER",
+    
+          %}
+  
+  
+          {% end_dnd_module %}
+  
+   {% end_dnd_section %} 
+  
+			
+  
+  
+  
+   {% dnd_section 
+     margin={
+        'top': 50,
+        'bottom': 70,
+        'left': 0,
+        'right': 0
+      },
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Map Module',
+            flexbox_positioning="TOP_CENTER",
+    
+          %}
+  
+  
+          {% end_dnd_module %}
+  
+   {% end_dnd_section %} 
+				
+				
+			
+  
+  
+
+
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

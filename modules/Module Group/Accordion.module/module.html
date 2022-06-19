@@ -1,0 +1,55 @@
+<style>
+				{% scope_css %}
+				  .titleborder:before{ display:none; }
+
+      .accordion-column>h4{ border-radius:{{ module.style.border_radius }}px }
+      .accordion-column > h4:hover{  background:{{ module.style.active_and_hover_color.color }} }
+      .accordion-column.active-accordion > h4{ background: {{ module.style.active_and_hover_color.color }} }
+      .accordion-row{  max-width: {{ module.style.accordion_row_width }}px; width: {{ module.style.accordion_row_width }}px;  }
+						
+						@media (max-width: 767px){
+								.accordion-row {width: 100%;}
+						}
+				{% end_scope_css%}
+</style>
+
+<div class="accordion-module" >
+   <div class="container">
+      {% if module.richtext_field %}
+         <div class="header-ofaccordion titleborder">
+             {{ module.richtext_field }}
+         </div>
+      {% endif %} 
+     
+     <div class="accordion-row">
+       {% for item in module.accordion_group %}
+         <div class="accordion-column {% if loop.index == 1 %} active-accordion {% endif %}">
+           <h4 class="arccodion-tab">
+              {{ item.quetion }}
+           </h4>
+           <div class="accordion-text">
+             {{ item.answer }}
+           </div>
+        </div>
+     {% endfor %}  
+     </div>
+     
+   </div>
+</div>
+
+{% require_js %}
+    <script defer>
+        $(document).ready(function(){
+           $('.arccodion-tab').click(function(){
+               $(this).parent().siblings().removeClass('active-accordion'); 
+               $(this).next().slideToggle();
+               $(this).parent().toggleClass('active-accordion');
+               $(this).parent().siblings().find('.accordion-text').slideUp();
+           });
+          
+        })
+    </script>
+  {% end_require_js %}
+
+
+

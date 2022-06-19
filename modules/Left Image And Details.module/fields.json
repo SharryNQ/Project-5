@@ -1,0 +1,55 @@
+[ {
+  "id" : "8f54352a-7536-91f1-580e-fa52227e2974",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/unsplash__OZCl4XcpRw.png",
+    "alt" : "unsplash__OZCl4XcpRw",
+    "loading" : "lazy",
+    "width" : 806,
+    "height" : 780,
+    "max_width" : 806,
+    "max_height" : 780
+  }
+}, {
+  "id" : "9967da6f-84ae-3349-f7ec-9732883fe25b",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Education and technology for the masses"
+}, {
+  "id" : "f13078fd-2d26-3951-bb61-664f27131133",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "High Quality Education"
+}, {
+  "id" : "d7970cb0-730d-2454-069f-dd01452a2564",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Felis placerat gravida sed nibh id purus. Dictum tristique sagittis lobortis sed. Fames fermentum viverra aliquet volutpat. Cursus turpis cursus vitae ut enim habitasse nec cursus amet. Egestas a arcu morbi amet nulla arcu est. Massa enim sed consectetur ornare. Amet, nibh sollicitudin tempor tincidunt velit</p>"
+} ]

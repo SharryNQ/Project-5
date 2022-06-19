@@ -1,0 +1,26 @@
+<style>
+				{% scope_css %}
+				.contact_map__row iframe { filter: drop-shadow(10px 10px 36px rgba(0, 0, 0, 0.1)); border-radius: {{ module.style.border_radius }}px; width: 100% !important; }
+    .contact_map__main .education_programs__header { text-align: center; }
+				{% end_scope_css%}
+</style>
+
+<section class="contact_map__main">
+     <div class="container">
+         <div class="education_programs__header">
+           <div class="subTextDef">
+             {{ module.caption }}
+           </div>
+           <div class="eduprogram"> 
+             <h2> 
+               {{ module.title }}
+             </h2>
+           </div>
+         </div>
+          <div class="contact_map__row">
+               <iframe src="{{ module.map_link }}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+      </div>
+</section>
+
+

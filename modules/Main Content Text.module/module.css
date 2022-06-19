@@ -1,0 +1,28 @@
+.sideBySideControllerNormal {  display: grid;
+  grid-template-columns: 100% 0;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "leftArea rightArea"
+    "leftArea rightArea"
+    "leftArea rightArea";
+		justify-content: center;
+		margin: auto;
+}
+
+.leftArea { grid-area: leftArea; padding: 0; }
+
+.rightArea { grid-area: rightArea; 
+    padding: 0;
+		  display: none;
+}
+
+
+@media (max-width:768px){
+.sideBySideController {
+    display: flex;
+    flex-direction: column;
+		  text-align: center;
+		}
+}

@@ -1,0 +1,46 @@
+<section class="education_programs__main">
+      <div class="container">
+      
+        <div class="education_programs__header">
+           <div class="subTextDef">
+             {{ module.header.caption }}
+          </div>
+          <div class="eduprogram">
+            <h2>
+              {{ module.header.text_field }}
+            </h2>
+          </div>
+        </div>
+        
+          <div class="education_programs__row">    
+														
+              <div class="education_programs__right">
+                {% if module.image_field.src %}
+                {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+                {% if module.image_field.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif module.image_field.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+                <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+             </div>
+														
+														              <div class="education_programs__left quoteController">
+                
+                <div class="quote__details">
+                  <div class="education_programs__text quoteText">
+                    {{ module.left_group.richtext_field }}
+                  </div>
+																				
+																		 <div class="quoteInfo">
+                    <p class="quoteInfoSpecific">{{module.quote_info}} {% if module.style.company_logo.src %} <img src="{{module.style.company_logo.src}}" alt="{{module.style.company_logo.alt}}"> {% endif %} </p>
+                  </div>
+                </div>
+                
+                
+             </div>
+        </div>
+     </div>
+</section>

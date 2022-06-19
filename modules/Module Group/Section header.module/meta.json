@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Alternate%20Arrows%20Vertical:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 67244683278,
+  "label" : "Section header",
+  "is_available_for_new_content" : true
+}

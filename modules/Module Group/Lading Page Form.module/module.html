@@ -1,0 +1,25 @@
+<style>
+				{% scope_css %}
+				{% if module.style.enable_custom_colors %}
+      .demoform-title { color:{{ module.style.details_color.color }} !important }
+				{% endif %}
+				{% end_scope_css%}
+</style>
+
+<div class="row-fluid">
+  <div class="demoform_area">
+    <div class="demoform-title">
+      {{ module.details }}
+    </div>
+    <div class="demoform">
+      {% form
+      form_to_use="{{ module.form_field.form_id }}"
+      response_response_type="{{ module.form_field.response_type }}"
+      response_message="{{ module.form_field.message }}"
+      response_redirect_id="{{ module.form_field.redirect_id }}"
+      response_redirect_url="{{module.form_field.redirect_url}}"
+      gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+    %}
+    </div>
+  </div>
+</div>

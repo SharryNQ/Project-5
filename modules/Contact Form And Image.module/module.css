@@ -1,0 +1,81 @@
+.quoteController {
+				flex-direction: column !important;
+    justify-content: center;
+				margin-bottom: 30px;
+}
+
+.quoteInfoSpecific {
+				display: flex;
+				margin-top: 90px;
+}
+
+.quoteInfoSpecific img {
+				max-height: 26px;
+				margin-left: 16px;
+}
+
+.quoteText {
+				    font-size: 2rem;
+				    line-height: 1;
+				    letter-spacing: 0.3px;
+}
+
+
+.education_programs__row { display: flex; flex-flow: wrap; }
+.education_programs__left { width: 60%; padding-right: 55px; display: flex; flex-flow: wrap; }
+.education_programs__right { width: 40%; position:relative;  }
+.left_imageicon { width: 65px; }
+.quote__details { width: calc(100%); padding-left: 56px; }
+.button_design a { font-size: 20px; line-height: 18px; }
+.ep__borderbtn__main { margin-top: 35px; }
+.education_programs__header h2 { padding-bottom: 30px; width: 100%; }
+.education_programs__header { margin-bottom: 10px; }
+.education_programs__main { }
+.education_programs__main .container { max-width: 1080px; }
+
+
+.education_programs__incfocon { position: absolute; box-shadow: 10px 10px 36px rgba(0, 0, 0, 0.1); border-radius: 15px; padding: 16px; background-color: #fff; max-width: 266px; width: 100%; font-weight: 500; font-size: 14px; line-height: 22px; bottom: 126px; right: 15px; }
+.contact__form { padding-left: 110px; }
+.contact__forminner { background: #F6FAFB; border-radius: 20px; padding: 30px 40px; }
+
+
+.contact__form  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000; opacity:1; 
+}
+.contact__form  ::-moz-placeholder { /* Firefox 19+ */
+ color: #000; opacity:1; 
+}
+.contact__form  :-ms-input-placeholder { /* IE 10+ */
+ color: #000; opacity:1; 
+}
+.contact__form  :-moz-placeholder { /* Firefox 18- */
+ color: #000; opacity:1; 
+}
+
+
+@media (max-width: 991px){
+  .education_programs__left{     padding-right: 0; }  
+
+}
+
+
+
+@media (max-width: 767px){
+  
+  .education_programs__left{ width: 100%;   padding-right: 0px; }
+  .education_programs__right {  width: 100%; }
+  .left_imageicon{  display:none; }
+  .quote__details{     width: calc(100% - 0px); padding-left: 0;  }
+  
+  .education_programs__right{     margin-top: 40px;  }
+  
+  
+  .contact__form{ padding-left: 0px !important; padding-top:40px; }
+  .education_programs__incfocon{ bottom: 0; }
+  
+  
+  
+}
+
+
+

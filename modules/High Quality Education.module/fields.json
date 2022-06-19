@@ -1,0 +1,114 @@
+[ {
+  "id" : "cf8cd226-4f12-8421-9c91-bc498d1299a8",
+  "name" : "left_group",
+  "display_width" : null,
+  "label" : "Right Side",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b7108868-40b4-fce2-94a0-031d0889de78",
+    "name" : "subtitle",
+    "display_width" : null,
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Education and technology for the masses",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Education and technology for the masses"
+  }, {
+    "id" : "cae23859-3953-b200-e3c4-702d68de79f9",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "High Quality Education",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "High Quality Education"
+  }, {
+    "id" : "6ddc44a3-5748-6fa0-9d2f-23a7904d1131",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor turpis eget tincidunt sit semper tortor amet. Elementum molestie a in condimentum lacus. Aliquet duis vel egestas eget quis. Lorem ut orci, tincidunt vel a tellus. At urna aenean at non iaculis nisl.</p>\n<p>Felis placerat gravida sed nibh id purus. Dictum tristique sagittis lobortis sed. Fames fermentum viverra aliquet volutpat. Cursus turpis cursus vitae ut enim habitasse nec cursus amet. Egestas a arcu morbi amet nulla arcu est. Massa enim sed consectetur ornare. Amet, nibh sollicitudin tempor tincidunt velit</p>"
+  }, {
+    "id" : "39665717-5aa8-74f9-4db4-eda4988cd81d",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn More"
+  }, {
+    "id" : "6c2257cc-17c1-f11c-8369-d6d16af3394e",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "subtitle" : "Education and technology for the masses",
+    "title" : "High Quality Education",
+    "richtext_field" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor turpis eget tincidunt sit semper tortor amet. Elementum molestie a in condimentum lacus. Aliquet duis vel egestas eget quis. Lorem ut orci, tincidunt vel a tellus. At urna aenean at non iaculis nisl.</p>\n<p>Felis placerat gravida sed nibh id purus. Dictum tristique sagittis lobortis sed. Fames fermentum viverra aliquet volutpat. Cursus turpis cursus vitae ut enim habitasse nec cursus amet. Egestas a arcu morbi amet nulla arcu est. Massa enim sed consectetur ornare. Amet, nibh sollicitudin tempor tincidunt velit</p>",
+    "button_text" : "Learn More",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "d65a6220-72ee-e432-6e19-5bd99250e21e",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://www.remotish.agency/hubfs/Community%20Minded/Optimized%20ImageClayBanksGirl.webp",
+    "alt" : "Optimized ImageClayBanksGirl",
+    "loading" : "lazy",
+    "width" : 806,
+    "height" : 871,
+    "max_width" : 806,
+    "max_height" : 871
+  }
+} ]

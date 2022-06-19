@@ -1,0 +1,118 @@
+[ {
+  "id" : "466c3dbd-e83c-a5b9-c9d3-3960bf89a572",
+  "name" : "left_side",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "bdfcf9ba-aa29-9c6f-8f43-7edd55d09740",
+    "name" : "subtitle",
+    "display_width" : null,
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Everyone in the world should have access to education",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Everyone in the world should have access to education"
+  }, {
+    "id" : "87ed9d30-e47d-cf3a-1a24-0482311a9d70",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Donate for a better education",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Donate for a better education"
+  }, {
+    "id" : "838a57cc-ffdd-3880-30f1-84f0f3a8daa4",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu pulvinar id et, orci ullamcorper consequat praesent euismod. Aliquet a morbi in risus. Elementum mauris, consequat accumsan, leo mattis tellus. Tortor egestas venenatis quam eget mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu pulvinar id et, orci ullamcorper consequat praesent euismod. Aliquet a morbi in risus. Elementum mauris, consequat accumsan, leo mattis tellus. Tortor egestas venenatis quam eget mauris.</p>\n<h4>Community Schools for everyone</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu pulvinar id et, orci ullamcorper consequat praesent euismod. Aliquet a morbi in risus. Elementum mauris, consequat accumsan, leo mattis tellus. Tortor egestas venenatis quam eget mauris.</p>\n<h4>Community Schools for everyone</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu pulvinar id et, orci ullamcorper consequat praesent euismod. Aliquet a morbi in risus. Elementum mauris, consequat accumsan, leo mattis tellus. Tortor egestas venenatis quam eget mauris.</p>\n<h4>Community Schools for everyone</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu pulvinar id et, orci ullamcorper consequat praesent euismod. Aliquet a morbi in risus. Elementum mauris, consequat accumsan, leo mattis tellus. Tortor egestas venenatis quam eget mauris.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : true,
+  "type" : "group",
+  "default" : {
+    "subtitle" : "Everyone in the world should have access to education",
+    "title" : "Donate for a better education",
+    "richtext_field" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu pulvinar id et, orci ullamcorper consequat praesent euismod. Aliquet a morbi in risus. Elementum mauris, consequat accumsan, leo mattis tellus. Tortor egestas venenatis quam eget mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu pulvinar id et, orci ullamcorper consequat praesent euismod. Aliquet a morbi in risus. Elementum mauris, consequat accumsan, leo mattis tellus. Tortor egestas venenatis quam eget mauris.</p>\n<h4>Community Schools for everyone</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu pulvinar id et, orci ullamcorper consequat praesent euismod. Aliquet a morbi in risus. Elementum mauris, consequat accumsan, leo mattis tellus. Tortor egestas venenatis quam eget mauris.</p>\n<h4>Community Schools for everyone</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu pulvinar id et, orci ullamcorper consequat praesent euismod. Aliquet a morbi in risus. Elementum mauris, consequat accumsan, leo mattis tellus. Tortor egestas venenatis quam eget mauris.</p>\n<h4>Community Schools for everyone</h4>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu pulvinar id et, orci ullamcorper consequat praesent euismod. Aliquet a morbi in risus. Elementum mauris, consequat accumsan, leo mattis tellus. Tortor egestas venenatis quam eget mauris.</p>"
+  }
+}, {
+  "id" : "cb88406b-47e0-ef24-aa25-739e147b0645",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d80d5d9e-ec19-8a1a-40db-3a783ab6f5a8",
+    "name" : "left_text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "left_text_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "fcde2cd4-4731-3022-895c-ccf33ab43dc3",
+  "name" : "right_side",
+  "display_width" : null,
+  "label" : "Right Side",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "dc032d78-a32f-758a-1fed-f23efd63b46f",
+    "name" : "richtext_field_1",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : ""
+  }, {
+    "id" : "88be5d81-9966-e6f6-0007-3a31b7b7497e",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "richtext_field_1" : "",
+    "title" : ""
+  }
+} ]

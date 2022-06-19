@@ -1,0 +1,64 @@
+[ {
+  "id" : "9c608c2c-0c83-3433-f059-931d28088df7",
+  "name" : "caption",
+  "display_width" : null,
+  "label" : "Caption",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Follow the map for directions"
+}, {
+  "id" : "a2e7e9da-ae51-11f7-edb0-a068b264a1dc",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Visit Our Office!"
+}, {
+  "id" : "c3038ba7-e4b3-7b83-4661-b01d6c3296c9",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0aec9d1e-09d2-b5e2-d30f-4cf94b808303",
+    "name" : "border_radius",
+    "display_width" : null,
+    "label" : "Border Radius",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 15
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "border_radius" : 15
+  }
+}, {
+  "id" : "8cef2117-da00-8e86-713c-943690a4dcc8",
+  "name" : "map_link",
+  "display_width" : null,
+  "label" : "Map Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6344.61265704176!2d-122.01350142224456!3d37.33525588756102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1sen!2sin!4v1645165240991!5m2!1sen!2sin"
+} ]

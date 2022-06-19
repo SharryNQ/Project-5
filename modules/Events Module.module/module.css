@@ -1,0 +1,108 @@
+.event_titlemain { text-align: center; margin: 0 auto; max-width: 900px; padding: 0 50px; }
+
+.mainEventIMG {
+				max-width: 75px !important;
+				width: 100%;
+}
+
+.eventTitle {
+				max-width: 245px;
+				width: 240px;
+				left: -1px;
+    position: relative;
+}
+
+.event_titlemain .titleEve { max-width: 450px; width: 100%; padding-bottom: 30px; }
+
+
+.event_button span { color: #fff;
+    background-color: rgba(29,139,164,1.0);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: inline-block;
+    padding: 12px 20px;
+    border: 0px solid #19110b;
+    border-radius: 100px; }
+.event_button { text-align: center;      margin-top: 30px; }
+
+
+
+.eventsModule {
+		  display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin:15px auto;
+    width: 100%;
+		 gap: 40px;
+		max-width: 900px;
+  padding-bottom: 10px;
+  
+}
+
+
+
+.dateTime {
+		   text-align: center;
+		   display: flex;
+		   align-content: center;
+    align-items: center;
+		gap: 14px;
+}
+
+.mainNum {
+		font-size: 36px;
+		width: 43px;
+}
+
+.dayMonth {
+		display: flex;
+  flex-direction: column;
+		gap: 16px;
+		width: 56px;
+}
+
+.dayArea, .monthArea {
+		font-size: 30px;
+}
+
+.monthArea {
+		font-weight: 600;
+}
+
+.bttEveArea {
+		    margin-left: 250px;
+}
+
+.titleContainerEve {
+		    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+@media (max-width: 991px){
+  .eventsModule{ flex-direction: column;  } 
+  .bttEveArea {  margin-left: 0;   padding-bottom: 20px; }
+  .event_titlemain{     text-align: center;  }
+  
+}
+  
+  
+@media (max-width: 767px){
+		.eventsModule {
+				    flex-direction: column;
+				    text-align: center;
+		}
+		
+		.bttEveArea {
+				margin:auto;
+		}
+
+
+  
+  
+  
+  
+}

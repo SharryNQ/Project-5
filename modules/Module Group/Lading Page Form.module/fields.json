@@ -1,0 +1,72 @@
+[ {
+  "id" : "98ffe0fb-5cc2-d2bc-a3a9-cc8efda667ee",
+  "name" : "details",
+  "display_width" : null,
+  "label" : "Details",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>Get Started With a Demo</h3>\n<p>We'll show you how our software will<br>instantly help grow your business.</p>"
+}, {
+  "id" : "84d42e4c-4e94-eb38-7104-056ce7cb7080",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "92de81f4-f557-66f9-561c-3651e11a9be3",
+    "name" : "enable_custom_colors",
+    "display_width" : null,
+    "label" : "Enable custom colors?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "54b8a5ec-4685-b57b-b51a-6ed05cff255c",
+    "name" : "details_color",
+    "display_width" : null,
+    "label" : "Details Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "92de81f4-f557-66f9-561c-3651e11a9be3",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_custom_colors" : false,
+    "details_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "9ed13195-0ee1-3dd8-7db5-b253fe61049a",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+} ]

@@ -1,0 +1,177 @@
+[ {
+  "id" : "3bce20de-33d6-df93-4858-b06de22f2c7d",
+  "name" : "section_background",
+  "display_width" : null,
+  "label" : "Section Background",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://www.remotish.agency/hubfs/HERO%20SECTION3.jpg",
+    "alt" : "HERO SECTION3",
+    "loading" : "lazy",
+    "width" : 1920,
+    "height" : 1041,
+    "max_width" : 1920,
+    "max_height" : 1041
+  }
+}, {
+  "id" : "e8ff5d07-de54-c2a6-37f7-f58b25e7fdbb",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "Support Our Education Initiatives",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Support Our Education Initiatives"
+}, {
+  "id" : "8feb3e51-fe11-c253-c8e2-8961a4a83d2d",
+  "name" : "paragraph",
+  "display_width" : null,
+  "label" : "Paragraph",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet nisl ornare sagittis, faucibus tellus vulputate eget. Mollis nibh pulvinar vitae vestibulum, elit orci in. Lorem adipiscing congue est posuere eu, lobortis lectus odio interdum.",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Your support gives the gift of education to developing nations around the world. Your donations go directly to our aid and mission work putting much-needed supplies in the hands of children."
+}, {
+  "id" : "bc848df7-1b70-3b64-eb32-218d705e7cf0",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "Get Involved",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get Involved"
+}, {
+  "id" : "f5e35a1b-3ab3-a3c6-df47-96467edc3b77",
+  "name" : "cta_link",
+  "display_width" : null,
+  "label" : "CTA Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "33167879-6beb-0790-e147-bd5c20172d45",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "cca10e07-2edd-5819-b542-dc62a310a342",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "c6d64e77-015d-8678-dc2c-e298d728d78d",
+    "name" : "enable_custom_cta",
+    "display_width" : null,
+    "label" : "Enable Custom CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "3bafcf6f-f8fd-9bba-a6af-3cb368a33e07",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "c6d64e77-015d-8678-dc2c-e298d728d78d",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "b297f36e-f6f2-a3e3-5397-cf2e4b30cf76",
+    "name" : "text_section_color",
+    "display_width" : null,
+    "label" : "Text Section Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "c6d64e77-015d-8678-dc2c-e298d728d78d",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#1D8CA4",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "enable_custom_cta" : true,
+    "background_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "text_section_color" : {
+      "color" : "#1D8CA4",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "3f603441-a7f8-9634-29ea-41b94865465d",
+  "name" : "custom_class",
+  "display_width" : null,
+  "label" : "Custom Class",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

@@ -1,0 +1,174 @@
+[ {
+  "id" : "e8ff5d07-de54-c2a6-37f7-f58b25e7fdbb",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Support Our Education Initiatives",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Support Our Education Initiatives"
+}, {
+  "id" : "8feb3e51-fe11-c253-c8e2-8961a4a83d2d",
+  "name" : "paragraph",
+  "display_width" : null,
+  "label" : "Paragraph",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet nisl ornare sagittis, faucibus tellus vulputate eget. Mollis nibh pulvinar vitae vestibulum, elit orci in. Lorem adipiscing congue est posuere eu, lobortis lectus odio interdum.",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet nisl ornare sagittis, faucibus tellus vulputate eget. Mollis nibh pulvinar vitae vestibulum, elit orci in. Lorem adipiscing congue est posuere eu, lobortis lectus odio interdum."
+}, {
+  "id" : "bc848df7-1b70-3b64-eb32-218d705e7cf0",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Get Involved",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get Involved"
+}, {
+  "id" : "f5e35a1b-3ab3-a3c6-df47-96467edc3b77",
+  "name" : "cta_link",
+  "display_width" : null,
+  "label" : "CTA Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "b25df181-e297-bfed-70df-0ef03b81d6ff",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "474a411f-6581-e29e-f9c0-a663a85ce458",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "e8bda76b-9b33-7c14-84d9-34b7e3c964d6",
+    "name" : "section_background",
+    "display_width" : null,
+    "label" : "Section Background",
+    "required" : false,
+    "locked" : false,
+    "type" : "backgroundimage",
+    "default" : {
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "src" : "https://www.remotish.agency/hubfs/_backup_BackgroundImage.jpeg"
+    }
+  }, {
+    "id" : "59d61c85-95d4-c6c6-5c91-6e8f7acffe47",
+    "name" : "enable_custom_cta",
+    "display_width" : null,
+    "label" : "Enable Custom CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "b7649f68-8417-fb35-b345-33e803323387",
+    "name" : "text_section_color",
+    "display_width" : null,
+    "label" : "Text Section Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "59d61c85-95d4-c6c6-5c91-6e8f7acffe47",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#218ca2",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "10ed7fd7-02f7-1011-ca54-decdcb158b5f",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "59d61c85-95d4-c6c6-5c91-6e8f7acffe47",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "section_background" : {
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "src" : "https://www.remotish.agency/hubfs/_backup_BackgroundImage.jpeg"
+    },
+    "enable_custom_cta" : true,
+    "text_section_color" : {
+      "color" : "#218ca2",
+      "opacity" : 100
+    },
+    "background_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "3f603441-a7f8-9634-29ea-41b94865465d",
+  "name" : "custom_class",
+  "display_width" : null,
+  "label" : "Custom Class",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

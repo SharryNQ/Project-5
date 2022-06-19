@@ -1,0 +1,227 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Home 
+  screenshotPath: ../images/thumbnails/Home.jpg
+-->
+ 
+{% extends './layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--about', label='Main section' %}
+     
+   {# about us First section #}
+    {% dnd_section 
+     margin={
+        'top': -100,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+						padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+						full_width='true'
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Main Hero',
+            flexbox_positioning="TOP_CENTER",
+         
+          %}
+  
+  
+  
+          {% end_dnd_module %}
+   
+      
+   
+         
+  
+    {% end_dnd_section %}
+   {# end about us First section #}
+
+     {# start sendond  section #} 
+  
+		
+		   {% dnd_section 
+     padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+						margin={
+        'top': 100,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      
+       %}
+      
+          {% dnd_module
+            path='@hubspot/rich_text',
+												html="
+												<p>&nbsp;</p>
+												<p>&nbsp;</p>
+												<p><span class='subTextDef'>Everyone in the world should have access to education</span></p>
+												<h2><span>We believe in accessible education</span></h2>
+												"
+          %}
+  
+  
+          {% end_dnd_module %}
+  
+   {% end_dnd_section %} 
+      {# end sendond section #}
+  
+   {# start sendond  section #} 
+   {% dnd_section 
+     margin={
+        'top': 0,
+        'bottom': 150,
+        'left': 0,
+        'right': 0
+      },
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Module Group/Gallery Image',
+            flexbox_positioning="TOP_CENTER",
+          %}
+  
+  
+          {% end_dnd_module %}
+  
+   {% end_dnd_section %} 
+      {# end sendond section #}  
+  
+  
+{#	{% dnd_section 
+     padding={
+        'top': 100,
+        'bottom': 100,
+        'left': 0,
+        'right': 0
+      },
+						margin={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+						background_color="F6FAFB";
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Quote Module',
+            flexbox_positioning="TOP_CENTER",
+    
+          %}
+  
+  
+          {% end_dnd_module %}
+  
+   {% end_dnd_section %} #}
+  
+  
+    {% include_dnd_partial path="../sections/Quote.html" %}
+  
+  
+  
+   {% dnd_section 
+     margin={
+        'top': 150,
+        'bottom': 150,
+        'left': 0,
+        'right': 0
+      },
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Education Programs',
+            flexbox_positioning="TOP_CENTER",
+    
+          %}
+  
+  
+          {% end_dnd_module %}
+  
+   {% end_dnd_section %} 
+				
+				
+				
+			{% dnd_section 
+     padding={
+        'top': 100,
+        'bottom': 100,
+        'left': 0,
+        'right': 0
+      },
+						margin={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+						background_color="F6FAFB";
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/High Quality Education',
+            flexbox_positioning="TOP_CENTER",
+    
+          %}
+  
+  
+          {% end_dnd_module %}
+  
+   {% end_dnd_section %} 
+  
+  
+  
+  
+   {# FAQ Section #}
+    {% dnd_section
+      
+      margin={
+        'top': 50,
+        'bottom': 50,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+   
+
+    
+          {% dnd_module
+            path='../modules/Module Group/Accordion', 
+            flexbox_positioning="TOP_CENTER",
+            testimonial_style = "style2"
+            
+          %}
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+    {#  end Product 1 section#}
+
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

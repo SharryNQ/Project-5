@@ -1,0 +1,23 @@
+{
+  "label" : "Community Minded",
+  "preview_path" : "./templates/homepage.html",
+  "screenshot_path" : "./images/thumbnails/CommunityCover.png",
+  "enable_domain_stylesheets" : false,
+  "is_available_for_new_content" : true,
+		"version":"1.0",
+  "author":{
+      "name":"Remotish Agency",
+      "email":"marketplace@remotish.agency",
+      "url":"https://www.remotish.agency/"
+    },
+  "responsive_breakpoints" : [ {
+    "name" : "mobile",
+    "previewWidth" : {
+      "value" : 477,
+      "units" : "px"
+    },
+    "mediaQuery" : "@media (max-width: 767px)"
+  } ],
+		"documentation_url":"https://marketplace.remotish.agency/community-minded-theme/documentation",
+  "example_url":"https://marketplace.remotish.agency/community-minded-theme"
+}

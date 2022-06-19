@@ -1,0 +1,28 @@
+.text_center { text-align: center; }
+.contact_us__row { display: flex; flex-flow: wrap; max-width: 1100px;
+    margin: 0 auto; }
+.contact_us__column { width: calc(100% / 3 - 40px); background: #F6FAFB; border-radius: 20px; margin: 0 20px; padding: 40px 40px; }
+.contact_us__details h3 { font-weight: bold; padding:0;  }
+.contact_us__text { line-height: 28px; padding-top: 12px; }
+.contact_us__details { padding-top: 12px; }
+
+
+@media (max-width:991px){
+  .contact_us__column{     width: calc(100% / 2 - 40px); margin-bottom: 40px; }
+  .contact__form {  padding-left: 39px; }
+  
+}
+
+@media (max-width:767px){
+  .contact_us__column{ width: calc(100% / 1 - 40px);  }
+  .contact_us__row{ max-width: 350px;  }
+  
+}
+
+
+
+
+
+
+
+

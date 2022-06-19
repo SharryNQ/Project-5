@@ -1,0 +1,3 @@
+.visible_item{ display:none; }
+.titleborder:before { display: none; }
+.square-filter ul li, .square-filter ul li:last-child { border: 0 !important;}

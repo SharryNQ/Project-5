@@ -1,0 +1,84 @@
+[ {
+  "id" : "d1ad4f63-517b-75c4-5a67-bfa327d95ed2",
+  "name" : "white_logo",
+  "display_width" : null,
+  "label" : "White Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://www.remotish.agency/hubfs/Imported%20images/Logo%20test.svg",
+    "alt" : "Logo test",
+    "suppress_company_name" : true,
+    "width" : 52,
+    "height" : 44
+  }
+}, {
+  "id" : "3158fbd7-65fb-011b-965a-c24e13335d0e",
+  "name" : "color_logo",
+  "display_width" : null,
+  "label" : "Color Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://www.remotish.agency/hubfs/Imported%20images/Logo%20test%20(1).svg",
+    "alt" : "Logo test (1)",
+    "suppress_company_name" : true,
+    "width" : 52,
+    "height" : 44
+  }
+}, {
+  "id" : "eee3a648-3116-0300-ae27-81785a5943a3",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "235438d7-1209-7e11-1901-d313c16df47f",
+    "name" : "custom_text_color",
+    "display_width" : null,
+    "label" : "Custom Text Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "c720113c-7edb-9032-58b7-ea4936d97d4a",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "custom_text_color" : false,
+    "text_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "0d31b63f-c38e-c797-da83-f6c622caf9eb",
+  "name" : "menu_field",
+  "display_width" : null,
+  "label" : "Menu",
+  "required" : false,
+  "locked" : false,
+  "type" : "menu",
+  "default" : ""
+} ]

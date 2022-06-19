@@ -1,0 +1,135 @@
+[ {
+  "id" : "fef043ad-891c-d96b-6d89-b0e8a6cabb5b",
+  "name" : "caption",
+  "display_width" : null,
+  "label" : "Caption",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We really want to connect with you!"
+}, {
+  "id" : "cf86e435-b627-a348-4a5d-bd3e47f7fb76",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : " Contact Us"
+}, {
+  "id" : "22fb5fa6-8c87-a429-6e41-af78949ecff6",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "b373f7c3-dffc-fd65-f574-45cb4ec6b010",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Label Text"
+  }, {
+    "id" : "30665f0f-77df-ee12-a62d-f0aa4389c8ef",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Community%20Minded/Vector%20(6).svg",
+      "alt" : "Vector (6)",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    }
+  }, {
+    "id" : "e7f9dca8-13af-c4ef-d2f3-9f086d03a333",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Street Address<br>City, ST 0000.<br>Country</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text_field" : "Label Text",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Community%20Minded/Vector%20(6).svg",
+      "alt" : "Vector (6)",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "richtext_field" : "<p>Street Address<br>City, ST 0000.<br>Country</p>"
+  }, {
+    "text_field" : "Label Text",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Community%20Minded/Vector%20(6).svg",
+      "alt" : "Vector (6)",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "richtext_field" : "<p>Street Address<br>City, ST 0000.<br>Country</p>"
+  }, {
+    "text_field" : "Label Text",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Community%20Minded/Vector%20(6).svg",
+      "alt" : "Vector (6)",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "richtext_field" : "<p>Street Address<br>City, ST 0000.<br>Country</p>"
+  } ]
+}, {
+  "id" : "a01054ec-a10e-74af-caf6-85d6cf82648d",
+  "name" : "section_class",
+  "display_width" : null,
+  "label" : "Section Class",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

@@ -1,0 +1,130 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: Volunteer
+    screenshotPath: ../../images/thumbnails/Cover 2.png
+-->
+
+ 
+
+{% extends '../layouts/base.html' %}
+
+
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--about', label='Main section' %}
+
+				   {# HERO SECTION START #}
+    {% dnd_section 
+     margin={
+        'top': -100,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+						padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+						full_width='true'
+      
+       %}
+      
+          {% dnd_module
+            path='../../modules/Main Hero',
+            flexbox_positioning="TOP_CENTER",
+         
+          %}
+  
+  
+  
+     {% end_dnd_module %}
+		{% end_dnd_section %}
+   {# HERO SECTION END #}
+  
+  
+    {% dnd_section 
+     padding={
+        'top': 110,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+       full_width = "true"
+       %}
+      
+          {% dnd_module
+            path='../../modules/Contact Us',
+            flexbox_positioning="TOP_CENTER",
+          %}
+  
+          {% end_dnd_module %}
+   
+      
+   
+          
+  
+    {% end_dnd_section %}
+  
+  
+  
+  
+  
+   
+      {# Hero Section #}
+    {% dnd_section
+   
+      padding={
+        'top': 100,
+        'bottom': 100,
+        'left': 0,
+        'right': 0
+      }
+       %}
+
+            {% dnd_module path="../../modules/Contact Form And Image",%}
+            {% end_dnd_module %}
+
+    {% end_dnd_section %}
+    {# End of Hero Section#}
+       
+  
+        {# Text Section #}
+    {% dnd_section
+   
+      padding={
+        'top': 0,
+        'bottom': 172,
+        'left': 0,
+        'right': 0
+      }
+       %}
+        
+           
+            {% dnd_module path='@hubspot/rich_text' %}
+            {% module_attribute "html"%}
+            <h2 style=" padding-bottom: 0;">
+              Volunteer today!
+
+            </h2>
+            <p> Felis placerat gravida sed nibh id purus. Dictum tristique sagittis lobortis sed. Fames fermentum viverra aliquet volutpat. Cursus turpis cursus vitae ut enim habitasse nec cursus amet. Egestas a arcu morbi amet nulla arcu est. Massa enim sed consectetur ornare. Amet, nibh sollicitudin tempor tincidunt velit
+            </p>
+            {% end_module_attribute %}
+            {% end_dnd_module %}
+
+  
+  
+    {% end_dnd_section %}
+    {# End of Text Section#}
+  
+  
+  
+  
+  
+  
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

@@ -1,0 +1,41 @@
+<section class="contact_us__main {{ module.section_class }}">
+    <div class="container">
+        <div class="education_programs__header text_center">
+          <div class="subTextDef">
+              {{ module.caption }}
+          </div>
+          <div class="eduprogram">
+            <h2>
+              {{ module.title }}
+            </h2>
+          </div>
+        </div>
+      
+      <div class="contact_us__row">
+        {% for item in module.field_group %}
+           <div class="contact_us__column">
+              <div class="contact_us__icon">
+                {% if item.icon.src %}
+                {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+                {% if item.icon.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif item.icon.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+                <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <div class="contact_us__details">
+                  <h3>
+                    {{ item.text_field }}
+                  </h3>
+                 <div class="contact_us__text">
+                   {{ item.richtext_field }}
+                </div>
+              </div>
+           </div>
+       {% endfor %} 
+      </div>
+    </div>
+</section>
